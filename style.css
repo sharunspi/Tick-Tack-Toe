@@ -67,3 +67,49 @@ header h1{
     margin-top: -280px;
     margin-left: 400px;
 }
+.card{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 100px;
+    height: 76px;
+    cursor: pointer;
+}
+#card-1{
+    top: 161px;
+    left: 409px;
+}
+#card-2{
+    top: 161px;
+    left: 590px;
+}
+#card-3{
+    top: 161px;
+    left: 775px;
+}
+
+#card-4{
+    top: 300px;
+    left: 409px;
+}
+#card-5{
+    top: 300px;
+    left: 590px;
+}
+#card-6{
+    top: 300px;
+    left: 775px;
+}
+
+#card-7{
+    top: 442px;
+    left: 409px;
+}
+#card-8{
+    top: 442px;
+    left: 590px;
+}
+#card-9{
+    top: 442px;
+    left: 775px;
+}
