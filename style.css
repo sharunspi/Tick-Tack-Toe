@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+html{
+    --background-color:#FFED99;
+    --main-heading:'Odibee Sans', cursive;
+    --main-font:'Press Start 2P', cursive;
+    --text-main-bg:#3B14A7;
+    --card-bg-color:#F6B8B8;
+}
+body{
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: var(--main-font);
+}
+header{
+    text-align: center;
+}
+header h1{
+    font-family: var(--main-heading);
+    font-size: 2.6em;
+}
+#main{
+    display: flex;
+}
+#user{
+    width: 25%;
+}
+#game{
+    width: 50%;
+}
+#compuer{
+    width: 25%;
+}
+.text-main{
+    color: var(--text-main-bg);
+    text-align: center;
+    margin-top: 5%;
+}
+.horizontal{
+    width: 80%;
+    height:10px;
+    background-color:var(--card-bg-color) ;
+}
+.horizontal-1{
+    margin-top: 150px;
+    margin-left: 40px;
+    border-radius: 4px;
+}
+.horizontal-2{
+    margin-top: 150px;
+    margin-left: 40px;
+    border-radius: 4px;
+}
+.vertical{
+    position: absolute;
+    width: 10px;
+    height: 400px;
+    background-color: var(--card-bg-color);
+}
+.vertical-1{
+    margin-top: -280px;
+    margin-left: 200px;
+}
+.vertical-2{
+    margin-top: -280px;
+    margin-left: 400px;
+}
