@@ -123,3 +123,18 @@ header h1{
     vertical-align: middle;
     font-size: 5em;
 }
+#settings{
+    display: block;
+    text-align: center;
+margin-top: 10%;
+}
+.btn{
+    padding: 20px 25px;
+    font-size: 1.2em;
+    color: var(--card-bg-color);
+    background-color: var(--text-main-bg);
+    cursor: pointer;
+}
+.btn-reset{
+    border-radius: 4em 8em
+}

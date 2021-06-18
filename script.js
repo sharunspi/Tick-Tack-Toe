@@ -1,6 +1,6 @@
 let star ="<div class='star'>X</div>"
 let zero = "<div class='zero'>O</div>"
-let count=0
+let count=0,userScore=0,computerScore=0
 const cards =document.querySelectorAll('.card')
 cards.forEach(card=>{
     card.addEventListener('click',function(ev){
@@ -40,4 +40,16 @@ function checkTally(){
     if(sum ==15){
         alert('User won !!')
     }
+}
+function reset(){
+    cards.forEach(card=>{
+        card.innerHTML =''
+    })
+    count=0
+}
+function updateUser(){
+    userScore++
+}
+function updateCompuerScore(){
+    computerScore++
 }
