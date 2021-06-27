@@ -1,6 +1,7 @@
 let star ="<div class='star'>X</div>"
 let zero = "<div class='zero'>O</div>"
 let count=0,userScore=0,computerScore=0
+let spotsClickedByUser =[]
 const cards =document.querySelectorAll('.card')
 cards.forEach(card=>{
     card.addEventListener('click',function(ev){
@@ -11,6 +12,8 @@ cards.forEach(card=>{
         }
         else{
             this.innerHTML=zero
+            spotsClickedByUser.push(ev.target.id.replace('card-',''))
+            updateByComputer()
         }
 
         if(count ==3){
@@ -46,10 +49,27 @@ function reset(){
         card.innerHTML =''
     })
     count=0
+    spotsClickedByUser= []
 }
 function updateUser(){
     userScore++
 }
 function updateCompuerScore(){
     computerScore++
+}
+function generateRandome(){
+    return Math.floor(Math.random()*9)
+}
+function updateByComputer (){
+    let val =generateRandome()
+    cards.forEach(card=>{
+        spotsClickedByUser.forEach(spot=>{
+            if(spot == val){
+                val = generateRandome()
+            }
+        })
+        if(card.id.replace('card-','')==val){
+            card.innerHTML = star
+        }
+    })
 }
