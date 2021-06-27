@@ -35,7 +35,6 @@ header h1{
 }
 .text-main{
     color: var(--text-main-bg);
-    text-align: center;
     margin-top: 5%;
 }
 .horizontal{
@@ -137,4 +136,10 @@ margin-top: 10%;
 }
 .btn-reset{
     border-radius: 4em 8em
+}
+#computer{
+    text-align: center;
+}
+#user{
+    text-align: center;
 }
